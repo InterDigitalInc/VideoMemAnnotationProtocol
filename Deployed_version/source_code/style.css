@@ -1,0 +1,40 @@
+/************* COPYRIGHT AND CONFIDENTIALITY INFORMATION *********
+Copyright © 2021 InterDigital R&D France
+All Rights Reserved
+Please refer to license.txt for the condition of use.
+*/
+
+/*Center in the screen the titles*/
+.titlecenter {
+    margin-top: 4em;
+    font-size: 1.4em;/*size text*/
+    font-family: Verdana, sans-serif; /*police*/
+    text-align: center;
+    color: black;
+}
+
+/*Center in the screen class .txtcenter*/
+.txtcenter {
+    margin-top: 1.2em;/*interlines*/
+    font-size: 1.2em;/*size text*/
+    font-family: Verdana, sans-serif; /*police*/
+    text-align: center;
+    color: black;
+}
+
+/*Bulleted lists style*/
+.bulleted_list_style {
+    margin-top: 1.2em;/*interlines*/
+    text-align:center;
+    font-family: Verdana, sans-serif; /*police*/
+    color: black;
+}
+
+/*Style of the labels of drop-down lists */
+.label_design {
+    margin-top: 1.2em;/*interlines*/
+    text-align: center;
+    font-family: Verdana, sans-serif; /*police*/
+    font-size: 0.8em;/*size text*/
+    color: black;
+}

@@ -1,0 +1,119 @@
+<!------------------ COPYRIGHT AND CONFIDENTIALITY INFORMATION  ---------------------->
+<!-- Copyright © 2021 InterDigital R&D France
+All Rights Reserved
+Please refer to license.txt for the condition of use.
+-->
+<!-- For help on using this template, see the blog post: http://mechanicalturk.typepad.com/blog/2014/04/editing-the-survey-link-project-template-in-the-ui.html --><!-- Bootstrap v3.0.3 -->
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<section class="container" id="SurveyLink" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;"><!--________________________________________________________________________________________________________________________________________________________--><!-- INSTRUCTIONS --><!--________________________________________________________________________________________________________________________________________________________-->
+<div class="row col-xs-12 col-md-12">
+<div class="panel panel-primary">
+<div class="panel-heading"><strong>Instructions</strong></div>
+
+<div class="panel-body">
+<p>CAREFUL! IF YOU HAVE ALREADY PARTICIPATED IN THE EXPERIMENT BEFORE, IT WILL CONFUSE THE ALGORITHM.</p>
+
+<p>This is a scientific survey about <strong>human memory</strong> when visualizing videos. To collect data, we designed a &quot;memory game&quot; that is proposed in this HIT.</p>
+
+<p>Because we need <strong>time</strong> to measure long-term memory, the experiment <strong>is split in two parts</strong>:</p>
+
+<ul>
+	<li>Part 1: in which you are about to participate, will last less than <strong>25 minutes</strong>;</li>
+	<li>Part 2: which you must perform <strong>only 24 to 72 hours after</strong> part 1, will last less than <strong>20 minutes</strong>. </li>
+</ul>
+
+Both parts are mandatory, and you will be payed <strong>only after</strong> participating to part 2.
+
+Please note that no email will be sent to remember that you have to perform the second part.
+To access part 1 and part 2, please follow the SURVEY LINK. 
+
+
+<p>&nbsp;</p>
+
+<p>During the whole experiment, you will need three elements to access the two parts:</p>
+
+<ul>
+	<li>Your ID as an Amazon worker (recalled below if you accept the HIT)</li>
+	<li>The password to access Part 2 of the experiment, which will be given to you at the end of Part 1</li>
+	<li>The password which will be given to you at the end of Part 2, and which will have to be pasted in the box below, in order to be payed.</li>
+</ul>
+<strong> Please be sure to note all this information in a safe place. </strong>
+
+<p>&nbsp;</p>
+
+<p>Requirements:</p>
+
+<ul>
+	<li>Use Chrome or Firefox to perform the task</li>
+	<li>At minimum, ADSL internet connection required (because of the videos)</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>Please note that your attention will be monitored through the experiment by some &#39;very-easy-to-recognize&#39; videos, and if you do not recognize most of them, you will not be allowed to continue with the second part of the experiment.</p>
+
+<p>You will be returned your performance at the end of the experiment. Please just pay attention and enjoy this interesting memory game!</p>
+</div>
+</div>
+<!--________________________________________________________________________________________________________________________________________________________--><!-- SURVEY LINK + PASS with URL worker ID (linked to its AMT account) and random auto-generated password
+<!--________________________________________________________________________________________________________________________________________________________-->
+
+<table>
+	<tbody>
+		<tr>
+			<td><strong>Survey link:</strong></td>
+			<td>
+			<div id="myelementLink" style="display: inline; font-family: Verdana;"><tt>URL not shown because there is an error with Javascript on your computer. To perform this HIT, you must have Javascript and cookies enabled on your browser.</tt></div>
+			<script type="text/javascript" language="JavaScript">
+	//Get worker ID
+	var assignment_id_field = document.getElementById('myelementLink');
+	var paramstr = window.location.search.substring(1);
+	var parampairs = paramstr.split("&");
+	var mturkworkerID = "";
+	for (i in parampairs) {
+	 var pair = parampairs[i].split("=");
+	 if (pair[0] == "workerId")
+	 mturkworkerID = pair[1];
+	}
+	if (mturkworkerID == "" ) {
+	 assignment_id_field.innerHTML = '<tt>The link will appear here only if you accept this HIT.</tt>';
+	} else {
+	 assignment_id_field.innerHTML = '<a target="_blank" href="https://memorability.technicolor.com?MID=' + mturkworkerID + '"><h1><span style="color: rgb(255, 0, 0);"><span style="font-family: Courier New;"><b>Click here to begin taking the survey!</b></span></span></h1></a>';
+	}
+	//Local test: http://localhost/MY_EXPERIMENT/TEST_with_AMT
+	//Final URL: https://memorability.technicolor.com
+</script><!--________________________________________________________________________________________________________________________________________________________--><!-- Display the participant's AMT ID, used as a pass to access the external welcome page
+<!--________________________________________________________________________________________________________________________________________________________-->
+
+			<div class="link" id="linkDiv">&nbsp;</div>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Your ID as worker:</strong></td>
+			<td>
+			<div id="myelementLink" style="display: inline; font-family: Verdana;"><tt>You will need your worker ID to access the external pages of the experiment.</tt></div>
+
+			<div id="textDiv">&nbsp;</div>
+			<script type="text/javascript">  
+    var div = document.getElementById("textDiv");  
+    div.textContent = mturkworkerID;  
+    var text = div.textContent;  
+</script><!--________________________________________________________________________________________________________________________________________________________--><!-- Link for the participants to be payed --><!--________________________________________________________________________________________________________________________________________________________-->
+
+			<div class="link" id="linkDiv">&nbsp;</div>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Provide the FINAL CODE (given at the end of SECOND PART) here:</strong></td>
+			<td style="vertical-align: middle;"><input class="form-control" id="surveycode" name="surveycode" placeholder="e.g. 123456" type="text" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</section>
+<!-- close container section -->
+<style type="text/css">td {
+ font-size:1.0em;
+ padding:5px 5px;
+}
+</style>
